@@ -135,15 +135,58 @@ ARR functions
   - Return the sum of the even data
 - `int copy(table &to_copy)`
   - Copy the array of linked lists. Retrun the number of nodes copied.
-- `bool table::devide_special()`
+- `bool devide_special()`
   - Returns true if the sum of the data in the shortest linked list devides the sum of the data in the longest linked list.
 - `int append_to_all()`
   - Append the first list in the array to all the other lists. Return 1 if any lists were appended, else return 0
 ---
 
 ## Linearly Linked List
-LLL functions
+LLL append functions
+- `void append(int to_append)`
+  - Append argument list to the end of this list.
+- `int append_if_divisible(int to_add)`
+  - For each data in the list that is divisible by the first node's data, append the given data to the end of the list. Return the number of nodes appended.
 
+LLL copy functions
+- `int copy(list &copyTo)`
+  - Copy the list. Return the number of nodes copied
+- `int copy_v2(list &copyTo)`
+  - Copy the list. Return the number of nodes copied
+- `int copy_only_arg(list &copyTo, int toCopy)`
+  - Copy the elements of the list with data equal to the given argument. Return the number of nodes copied
+- `int copy_even(list &to_copy)`
+  - Copy the even data. Return the number of nodes copied
 
+LLL count functions
+- `int average_evens()`
+  - Return the average of the even data in the list
+- `int average_unique()`
+  - Return the average of the unique data in the list
+- `int is_in_list(int data)`
+  - Return the number of times given data occurs in the list
+- `int count_last()`
+  - Return the number of times the last data appears in the list
+
+LLL display functions
+- `int display_last()`
+  - Display and return the last data if it doesnt equal the first data, else don't display, and return 0
+- `int display_unique()`
+  - Display only the unique data. Return the number of unique data
+- `int display_uniquely()`
+  - Displays a LLL but only displays each data once. Returns the number of data displayed
+
+LLL modify functions
+- `int reverse()`
+  - Reverse the linked list. Return the number of nodes in the list
+- `int reverse_every_3()`
+  - Reverses evey three elements of the list. Returns the number of nodes altered:
+- `int remove_center()`
+  - Remove all but the head and tail nodes. Return the sum of the data removed
+- `int modify_after()`
+  - Add the data of the first node divisible by 3 or 5 to every following node. Return the number of nodes that occur before a node is divisible by four
+- `int move_first_to_last()`
+  - Moves the first node to the end of the list. Returns the sum of all the nodes but the one moved.
+---
 ## DLL
 ## CLL
