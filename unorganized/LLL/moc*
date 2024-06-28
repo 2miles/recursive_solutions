@@ -1,0 +1,22 @@
+#include "list.h"
+
+int main()
+{
+    list object;
+    list object2;   //blank list to copy into
+
+    object.build();    //builds a LLL
+    object.display();  //displays the LLL
+
+    //PLEASE PUT YOUR CODE HERE to call the function assigned
+
+
+    
+    cout << "The sum of the data: " << object.move_first_to_last();
+    cout << endl;
+   
+    object.display();  //displays the LLL again!
+
+
+    return 0;
+}
